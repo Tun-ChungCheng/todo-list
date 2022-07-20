@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Just Another Hand', cursive;
+}
+
+i {
+    pointer-events: none;
+}
+
+body {
+    background: url("/src/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: scroll;
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: black;
+        font-size: 5rem;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input, button{
+        border: none;
+        padding: 0.25rem 1rem;
+        font-size: 1.75rem;
+        margin: 0.15rem;
+        border-radius: 4px;
+    }
+    input[type="number"] {
+        width: 100px;
+        text-align: center;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+}
+
+button {
+  background-color: #f8f9fa;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.todo {
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        margin: 0.2rem 0rem;
+        transition: all 0.1s ease;
+    }
+
+    p {
+        background-color: white;
+        color: black;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.75rem;
+        border-radius: 4px;
+        margin: 0.1rem;
+    }
+
+    p.todo-text {
+        width: 50%; 
+    }
+
+    p.todo-time {
+        width: 20%;
+        text-align: center;
+    }
+
+    button {
+        padding: 0.25rem 0.5rem;
+        font-size: 1.75rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button.complete {
+        background-color: lightcoral;
+    }
+
+    button.trash {
+        background-color: lightgreen;
+    }
+}
+
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+}
+
+div.sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem;
+    button{
+        padding: 0.25rem 0.5rem;
+        font-size: 1.75rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+}
+
