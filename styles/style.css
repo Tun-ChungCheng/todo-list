@@ -11,7 +11,7 @@ i {
 }
 
 body {
-  background: url("/src/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg");
+  background: url("https://tun-chungcheng.github.io/todo-list/src/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: scroll;
