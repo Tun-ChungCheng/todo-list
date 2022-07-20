@@ -150,8 +150,9 @@ $(document).ready(() => {
     //get the input value
     const form = $(e.target).parent();
     const todoText = $(form).children().first().val();
-    const todoMonth = $(form).children().eq(1).val();
-    const todoDate = $(form).children().eq(2).val();
+    const datePicker = $(form).children().eq(1).val();
+    const todoMonth = datePicker.split("-")[1];
+    const todoDate = datePicker.split("-")[2];
     if (todoText === "") {
       alert("Please Enter some Text.");
       return;
@@ -161,8 +162,7 @@ $(document).ready(() => {
 
     // set value to null
     $(form).children().first().val(null);
-    $(form).children().eq(1).val(null);
-    $(form).children().eq(2).val(null);
+    $(form).children().eq(1).val("2022-01-01");
   });
 
   /**

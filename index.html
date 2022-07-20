@@ -33,8 +33,13 @@
 
     <form>
       <input type="text" />
-      <input type="number" min="1" max="12" placeholder="M" required />
-      <input type="number" min="1" max="31" placeholder="D" required />
+      <input
+        type="date"
+        value="2022-01-01"
+        required
+        min="2022-01-01"
+        max="2022-12-31"
+      />
       <button type="sumit">Add into List</button>
     </form>
 
