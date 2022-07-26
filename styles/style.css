@@ -45,8 +45,6 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Chrome, Safari, Edge, Opera */
-  /* Firefox */
 }
 
 form input, form button {
@@ -55,21 +53,6 @@ form input, form button {
   font-size: 1.75rem;
   margin: 0.15rem;
   border-radius: 4px;
-}
-
-form input[type="number"] {
-  width: 100px;
-  text-align: center;
-}
-
-form input::-webkit-outer-spin-button,
-form input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-form input[type=number] {
-  -moz-appearance: textfield;
 }
 
 button {
@@ -95,7 +78,7 @@ section {
 }
 
 section div.todo {
-  width: 30vw;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,5 +149,21 @@ div.sort button {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background-size: auto;
+    height: 100vh;
+  }
+  form input, form button {
+    font-size: 5vw;
+  }
+  div.sort button {
+    font-size: 5vw;
+  }
+  header h1 {
+    font-size: 15vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

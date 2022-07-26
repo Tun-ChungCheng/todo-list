@@ -12,7 +12,7 @@ i {
 body {
     background: url("https://source.unsplash.com/RLw-UC03Gwc/1500x1000");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     overflow: scroll;
 }
 
@@ -38,22 +38,6 @@ form {
         margin: 0.15rem;
         border-radius: 4px;
     }
-    input[type="number"] {
-        width: 100px;
-        text-align: center;
-    }
-
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-
-    /* Firefox */
-    input[type=number] {
-    -moz-appearance: textfield;
-    }
 }
 
 button {
@@ -69,7 +53,7 @@ section {
     align-items: center;
 
     div.todo {
-        width: 30vw;
+        width: 250px;
         display: flex;
         align-items: center;
         margin: 0.2rem 0rem;
@@ -131,3 +115,27 @@ div.sort {
     }
 }
 
+@media screen and (max-width:850px) {
+    body {
+        background-size: auto;
+        height: 100vh;
+    }
+    
+    form {
+        input, button {
+            font-size: 5vw;
+        }
+    }
+
+    div.sort{
+        button {
+            font-size: 5vw;
+        }
+    }
+
+    header {
+        h1 {
+            font-size: 15vw;
+        }
+    }
+}
